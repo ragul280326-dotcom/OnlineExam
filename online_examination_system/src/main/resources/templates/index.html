@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Examination System</title><link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">JAVA FULL STACK PROJECT</div>
+      <h1>Online Examination System</h1>
+      <p>Take a short multiple-choice test and view your score instantly.</p>
+      <div class="features"><span>✓ 10 Questions</span><span>✓ Instant Result</span><span>✓ Answer Review</span></div>
+    </section>
+    <section class="panel">
+      <h2>Student Login</h2>
+      <p class="muted">Enter your name to begin the exam.</p>
+      <form action="/start" method="post">
+        <label for="studentName">Student name</label>
+        <input id="studentName" name="studentName" type="text" placeholder="Enter your full name" maxlength="80" required>
+        <p class="error" th:if="${error}" th:text="${error}"></p>
+        <button type="submit">Start Examination →</button>
+      </form>
+      <p class="small">Demo project · No account or database setup required</p>
+    </section>
+  </main>
+</body>
+</html>

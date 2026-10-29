@@ -1,0 +1,62 @@
+[
+  {
+    "id": "CWE-543",
+    "name": "Use of Singleton Pattern Without Synchronization in a Multithreaded Context",
+    "status": "PENDING",
+    "category": "Concurrency & Synchronization",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-567",
+    "name": "Unsynchronized Access to Shared Data in a Multithreaded Context",
+    "status": "PENDING",
+    "category": "Concurrency & Synchronization",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-662",
+    "name": "Improper Synchronization",
+    "status": "PENDING",
+    "category": "Concurrency & Synchronization",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-667",
+    "name": "Improper Locking",
+    "status": "PENDING",
+    "category": "Concurrency & Synchronization",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-820",
+    "name": "Missing Synchronization",
+    "status": "PENDING",
+    "category": "Concurrency & Synchronization",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-821",
+    "name": "Incorrect Synchronization",
+    "status": "PENDING",
+    "category": "Concurrency & Synchronization",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  }
+]

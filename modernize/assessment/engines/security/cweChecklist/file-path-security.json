@@ -1,0 +1,52 @@
+[
+  {
+    "id": "CWE-22",
+    "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+    "status": "PENDING",
+    "category": "File & Path Security",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-23",
+    "name": "Relative Path Traversal",
+    "status": "PENDING",
+    "category": "File & Path Security",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-36",
+    "name": "Absolute Path Traversal",
+    "status": "PENDING",
+    "category": "File & Path Security",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-434",
+    "name": "Unrestricted Upload of File with Dangerous Type",
+    "status": "PENDING",
+    "category": "File & Path Security",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-611",
+    "name": "Improper Restriction of XML External Entity Reference",
+    "status": "PENDING",
+    "category": "File & Path Security",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  }
+]

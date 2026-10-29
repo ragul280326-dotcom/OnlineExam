@@ -1,0 +1,162 @@
+[
+  {
+    "id": "CWE-130",
+    "name": "Improper Handling of Length Parameter Inconsistency",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-456",
+    "name": "Missing Initialization of a Variable",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-457",
+    "name": "Use of Uninitialized Variable",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-477",
+    "name": "Use of Obsolete Function",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-570",
+    "name": "Expression is Always False",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-571",
+    "name": "Expression is Always True",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-606",
+    "name": "Unchecked Input for Loop Condition",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-665",
+    "name": "Improper Initialization",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-681",
+    "name": "Incorrect Conversion between Numeric Types",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-682",
+    "name": "Incorrect Calculation",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-772",
+    "name": "Missing Release of Resource after Effective Lifetime",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-775",
+    "name": "Missing Release of File Descriptor or Handle after Effective Lifetime",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-783",
+    "name": "Operator Precedence Logic Error",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-789",
+    "name": "Memory Allocation with Excessive Size Value",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-835",
+    "name": "Loop with Unreachable Exit Condition ('Infinite Loop')",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  },
+  {
+    "id": "CWE-1057",
+    "name": "Data Access Operations Outside of Expected Data Manager Component",
+    "status": "PENDING",
+    "category": "Code Quality",
+    "evidence": {
+      "files": [],
+      "explanation": ""
+    }
+  }
+]

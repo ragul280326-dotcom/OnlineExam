@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Take Exam</title><link rel="stylesheet" th:href="@{/style.css}">
+  <script>
+    function updateProgress() {
+      const total = document.querySelectorAll('.question-card').length;
+      const answered = document.querySelectorAll('input[type=radio]:checked').length;
+      document.getElementById('progressText').textContent = answered + ' of ' + total + ' answered';
+      document.getElementById('progressBar').style.width = (answered / total * 100) + '%';
+    }
+    function confirmSubmit() {
+      const total = document.querySelectorAll('.question-card').length;
+      const answered = document.querySelectorAll('input[type=radio]:checked').length;
+      return confirm('You answered ' + answered + ' of ' + total + ' questions. Submit exam?');
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar"><a href="/" class="brand">Online Exam</a><span th:text="'Student: ' + ${studentName}"></span></header>
+  <main class="exam-wrap">
+    <div class="exam-heading"><div><div class="eyebrow">ASSESSMENT</div><h1>Java & Web Basics</h1><p class="muted">Choose one answer for each question.</p></div><div class="progress-box"><strong id="progressText">0 of 10 answered</strong><div class="progress"><div id="progressBar"></div></div></div></div>
+    <form action="/submit" method="post" onsubmit="return confirmSubmit()">
+      <section class="question-card" th:each="q, stat : ${questions}">
+        <div class="question-meta"><span th:text="'QUESTION ' + ${stat.count}"></span><span>1 mark</span></div>
+        <h3 th:text="${q.text}"></h3>
+        <label class="option" th:each="option, optStat : ${q.options}">
+          <input type="radio" th:name="'q' + ${q.id}" th:value="${optStat.index}" onchange="updateProgress()">
+          <span th:text="${option}"></span>
+        </label>
+      </section>
+      <button class="submit-button" type="submit">Submit Examination</button>
+    </form>
+  </main>
+</body>
+</html>

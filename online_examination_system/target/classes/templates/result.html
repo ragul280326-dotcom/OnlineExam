@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exam Result</title><link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+  <main class="result-wrap">
+    <section class="result-hero">
+      <div class="eyebrow">EXAM COMPLETED</div><h1>Well done, <span th:text="${studentName}"></span>!</h1>
+      <p>Your examination has been submitted successfully.</p>
+      <div class="score-circle"><strong th:text="${score} + '/' + ${total}"></strong><span>YOUR SCORE</span></div>
+      <h2 th:text="${percentage} + '%'"></h2>
+      <p th:text="${percentage >= 50 ? 'Pass — keep learning!' : 'Keep practising and try again!'}"></p>
+      <a class="button-link" href="/">Take Another Exam</a>
+    </section>
+    <section class="review">
+      <h2>Answer Review</h2>
+      <article class="review-item" th:each="item, stat : ${review}">
+        <div class="review-title"><strong th:text="${stat.count} + '. ' + ${item.question}"></strong><span th:class="${item.correct ? 'correct-tag' : 'wrong-tag'}" th:text="${item.correct ? 'Correct' : 'Incorrect'}"></span></div>
+        <p>Your answer: <strong th:text="${item.selected}"></strong></p>
+        <p>Correct answer: <strong th:text="${item.correctAnswer}"></strong></p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
